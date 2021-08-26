@@ -1,0 +1,1130 @@
+body 
+{
+    background-image: url("../images/login-background2.jpg");
+    display: flex;
+    min-height: 99vh;
+    flex-direction: column;
+    margin: 0.1em;
+}
+
+.menu {
+    display: flex;
+
+    margin: .1em;
+    padding: .3em;
+}
+
+
+.upper_menu {
+    background: rgba(25, 49, 112, .7);
+    z-index: 2;
+    height: 40px;
+    transition: all .3s;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bottom_menu 
+{
+
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    transition: all .3s;
+    height: 30px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3);
+    margin: .1em;
+    padding: .3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    background: rgba(200, 200, 200, 0.55);
+}
+
+
+.invisible 
+{
+    visibility: hidden;
+}
+
+.undisplayable
+{
+    display: none !important;
+}
+
+.label 
+{
+    background-color: rgba(250, 250, 250, .3);
+    width: 220px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+label input
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+label span
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+#outer_container 
+{
+    border: solid 0.25px rgba(255,255,255,.55);
+    background: rgba(200, 200, 200, 0.55);
+    padding: 10px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.area_inner_header 
+{
+    width: calc(100% - 10px);
+    background-color: whitesmoke;
+    padding-left: 10px;
+}
+
+.whitebordered_area
+{
+    width: 220px;
+    border: solid .5px rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,0.3);
+}
+
+.indiv
+{
+    padding: 5px;
+}
+
+.whiteboard
+{
+    background-color: white;
+    margin-top: 10px;
+}
+
+.whiteboard label
+{
+    white-space: nowrap;
+}
+
+.whiten_background_label
+{
+    background-color: rgba(255,255,255,.3);
+    padding-left: 5px;
+}
+
+.exclamationmark
+{
+    height: 20px;
+    width: 20px;
+    background-color: crimson;
+    color: white;
+    align-self: center;
+    text-align: center;
+    transition: all 0.2s;
+    font-weight: bold;
+    cursor: help;
+    animation: blinker 1.5s ease-in-out infinite;
+}
+
+@keyframes blinker 
+{  
+    50% { opacity: 0; }
+}
+
+.exclamationmark:hover
+{
+    background-color: yellow;
+    color: crimson;
+    background-color: white;
+}
+
+#outer_container 
+{
+    border: solid 0.25px rgba(255,255,255,.55);
+    background: rgba(200, 200, 200, 0.55);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content_container
+{
+    display: flex;
+    background-color: rgba(0, 100, 0, .65);
+    padding: 10px;
+    height: 645px;
+}
+
+.image_border
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,255,255,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_border img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.step_away_left
+{
+    margin-left: 5px;
+}
+
+.step_away_right
+{
+    margin-right: 5px;
+}
+
+
+.left_upper_label
+{
+    width: 100px;
+    background-color: rgba(255,255,255,.5);
+    padding-left: 5px;
+    height: 19px;
+    border: solid .5px whitesmoke;
+    border-bottom: 0px;
+}
+
+
+input, select
+{
+    max-width: 100%;
+    border: solid .5px rgba(255,255,255,.5);
+}
+
+
+.noselect 
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form_name {
+    background-color: rgba(255,255,255,.6);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid whitesmoke;
+    width: 200px;
+    align-self: center;
+}
+
+#form_name_container
+{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#header_container 
+{
+    display: flex;
+    position: relative;
+}
+
+#playlists_list_area, #favourites_area, #playlist_1_area, #playlist_2_area
+{
+    width: 300px;
+    padding: 1.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#playlist_1_area
+{
+    margin-right: 5px;
+}
+
+#playlists_list_area, #favourites_area
+{
+    width: 350px;
+    margin-right: 5px;
+}
+
+#playlists_list_area button, #favourites_area button, #playlist_1_items button, #playlist_2_items button
+{
+    border: solid .5px black;
+}
+
+#playlists_list_area button:hover, #favourites_area button:hover, #playlist_1_items button:hover, #playlist_2_items button:hover
+{
+    border: solid .5px blue;
+}
+
+#playlists_list_area button:active, #favourites_area button:active, #playlist_1_items button:active, #playlist_2_items button:active
+{
+    border: solid .5px whitesmoke;
+}
+
+#playlists_list_header, #favourites_header, #playlist_1_header, #playlist_2_header
+{
+    height: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+#favourites_header
+{
+    justify-content: space-around;
+}
+
+#current_fav_mode
+{
+    color: crimson;
+    width: 50px;
+}
+
+#playlists, #favourited_items, #playlist_1_items, #playlist_2_items
+{
+    width: calc(100% -3px);
+    flex: 1 1 auto;
+    flex-flow: column;
+    background-color: rgba(255,255,255,.3);
+    margin-top: 3px;
+    overflow: auto;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+
+.heading_part
+{
+    height: 88.5px;
+    margin-bottom: 8px;
+}
+
+#playlists, #playlist_1_items, #playlist_2_items, #favourited_items
+{
+    max-height: 536.5px;
+    padding-top: 3px;
+}
+
+#playlists_list_controls
+{
+    display: flex;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    height: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#playlist_1_controls, #playlist_2_controls
+{
+    display: flex;
+    width: calc(100% - 6px);
+    background-color: rgba(255,255,255,.6);
+    height: calc(58.5px - 6px);
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px;
+    flex-direction: column;
+}
+
+#pl1_row1, #pl1_row2, #pl2_row1, #pl2_row2
+{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#playlist_1_controls button, #playlist_2_controls button
+{
+    height: 23px;
+    width: 36px;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3px;
+    border: solid .5px black;
+}
+
+
+
+#playlist_1_controls button:hover, #playlist_2_controls button:hover
+{
+    border: solid .5px blue;
+}
+
+#playlist_1_controls button:active, #playlist_2_controls button:active
+{
+    border: solid .5px whitesmoke;
+}
+
+#playlist_1_header, #playlist_2_header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#save_pl1_button, #save_pl2_button
+{
+    margin-left: 3px;
+}
+
+#reload_pl1_button, #reload_pl2_button
+{
+    margin-right: 3px;
+}
+
+#new_playlist_area, 
+#rename_playlist_area
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new_playlist_area, 
+#rename_playlist_area,
+#delete_playlist_area
+{
+    margin-top: 1px;
+}
+
+#delete_playlist_area
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#new_playlist_area > input, 
+#rename_playlist_area > input
+{
+    height: 23px;
+}
+
+#new_playlist_area .questionmark, 
+#rename_playlist_area .questionmark
+{
+    background-color: yellow;
+    height: 22.5px;
+    width: 22.5px;
+    border: .5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new_playlist_area .questionmark:hover, 
+#rename_playlist_area .questionmark:hover
+{
+    background-color: white;
+    border: .5px solid blue;
+    color: black;
+}
+
+#new_playlist_area button, 
+#playlists_list_controls button, 
+#rename_playlist_area button
+{
+    height: 23px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#delete_playlist_area button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 30px;
+    padding: 0;
+    margin-left: 9px;
+    font-weight: 400;
+}
+
+#playlists_list_controls button
+{
+    margin-left: 7px;
+}
+
+#fav_search_mode button
+{
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+
+#fav_search_mode button:active
+{
+    background-color: whitesmoke;
+    color: crimson;
+}
+
+#content_type_selection
+{
+    width: 100%;
+}
+
+.action_type
+{
+    padding: 0px;
+    border: .5px solid whitesmoke;
+    height: 24px;
+    width: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#search_pages_control_area button:active
+{
+    border: solid .5px whitesmoke;
+}
+
+#playlists_filter_area, #search_string_block
+{
+    display: flex;
+    height: 23px;
+    margin-bottom: 5px;
+    border-top: solid 0.5px green;
+}
+
+#fav_search_mode
+{
+    display: flex;
+}
+
+#fav_search_mode button
+{
+    height: 23px;
+    width: 23px;
+    margin-left: 3px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_string_block
+{
+    display: flex;
+}
+
+#playlists_filter_input, #search_string_block #search_string
+{
+    flex: 1;
+}
+
+#clean_playlists_filter
+{
+    height: 23px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+
+#cleanse_search_button
+{
+    border: solid .5px black;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+
+#search_pages_control_area
+{
+    background-color: rgba(255,255,255,.6);
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#search_pages_control_area button
+{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.05em;
+    height: 23px;
+    width: 50px;
+}
+
+#page_number
+{
+    width: 30px;
+    width: 50px;
+    height: 23px;
+    text-align: center;
+}
+
+#unselect_all_playlists_button, #unselect_all_tracks_pl1_button, #unselect_all_tracks_pl2_button
+{
+    text-decoration: line-through red solid;
+}
+
+#pl1_row1 #unselect_all_tracks_pl1_button, #pl2_row1 #unselect_all_tracks_pl2_button
+{
+    margin-right: 20px;
+}
+
+#delete_playlist_area #delete_selected_playlists_button
+{
+    color: whitesmoke;
+    background-color: crimson;
+    border: solid .5px whitesmoke;
+}
+
+#delete_playlist_area #delete_selected_playlists_button:active
+{
+    color: crimson;
+    background-color: whitesmoke;
+    border: solid .5px black;
+}
+
+#delete_playlist_area #delete_selected_playlists_button,
+#delete_playlist_area #exit_delete_playlists_mode_button
+{
+    padding-bottom: 5px;
+}
+
+#rename_playlist_area .action_type
+{
+    height: calc(24px - 9px);
+    padding-bottom: 9px;
+}
+
+#delete_playlist_area .action_type,
+#new_playlist_area .action_type
+{
+    height: calc(24px - 2px);
+    padding-top: 2px;
+}
+
+#playlists_list_controls #rename_playlist_button
+{
+    padding-bottom: 9px;
+}
+
+#pl1_row1 #delete_selected_tracks_p1_button, #pl2_row1 #delete_selected_tracks_p2_button
+{
+    color: whitesmoke;
+    background-color: crimson;
+    border: solid .5px whitesmoke;
+    margin-left: 20px;
+}
+
+#pl1_row2 #p1_move_down, #pl2_row2 #p2_move_down
+{
+    margin-right: 20px;
+}
+
+
+#pl1_row1 #delete_selected_tracks_p1_button:hover, #pl2_row1 #delete_selected_tracks_p2_button:hover
+{
+    border: solid .5px blue;
+}
+
+#pl1_row1 #delete_selected_tracks_p1_button:active, #pl2_row1  #delete_selected_tracks_p2_button:active
+{
+    color: crimson;
+    background-color: whitesmoke;
+    border: solid .5px black;
+}
+
+#new_playlist_name, #playlists_filter_input, #search_string
+{
+    text-align: center;
+}
+
+.playlist_row, .audiotrack_row
+{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.playlist_row button, .playlist_delete_check, .audiotrack_row button, .select_track_check
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+}
+
+.playlist_button_cell, .playlist_delete_check, .playlist_rename, .select_track_check, .playbutton_cell
+{
+    height: 100%;
+    width: 25px;
+}
+
+.playlist_delete_check, .select_track_check
+{
+    border: solid .5px black;
+    border-right: 0;
+    height: calc(100% - 1px);
+    width: calc(25px - .5px);
+    background-color: rgba(255,255,255,.5);
+}
+
+.playlist_delete_check input, .select_track_check input
+{
+    height: 100%;
+    width: 100%;
+}
+
+.playlist_name_cell
+{
+    flex: 1;
+    padding-left: 5px;
+    border: solid black 0.5px;
+    background-color: rgba(255,255,255,.5);
+    height: calc(25px - 1px);
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.playlist_row.highlighted, .audiotrack_row.highlighted
+{
+    background-color: rgb(153, 255, 147); 
+}
+
+.highlighted button
+{
+    background-color: #ffff00;
+    color: blue;
+}
+
+.highlighted button:hover
+{
+    color: white;
+    background-color: blue;
+}
+
+.highlighted button:active
+{
+    color: white;
+    background-color: green;
+}
+
+#edit_playlist_name, #new_playlist_name
+{
+    padding-left: 3px;
+}
+
+#rename_playlist_area #cancel_playlist_rename, #new_playlist_area #cancel_playlist_creation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 30px;
+    padding: 0;
+    font-weight: 400;
+}
+
+.audiotrack_row.inactive
+{
+    text-decoration: line-through crimson;
+    color: #777777;
+    background-color: #cccccc;
+}
+
+.audiotrack_row.inactive .playbutton_cell
+{
+    border: solid .5px black;
+    background-color: rgba(255,255,255,.5);
+    height: calc(25px - 1px);
+    width: calc(25px - 1px);
+}
+
+.playlist_area_number
+{
+    font-size: 1.3em;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: rgb(58,124,64);
+    background-color: whitesmoke;
+
+    padding-bottom: 2.1px;
+}
+
+.header_button_container
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#pl1_name, #pl2_name
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    max-width: 180px;
+    font-size: 0.8em;
+}
+
+.data_cell
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.data_cell:first-child
+{
+    margin-left: 2px;
+}
+
+.artist_data_row > .image_cell, .artist_data_row > .button_cell,
+.album_data_row > .image_cell, .album_data_row > .button_cell,
+.track_data_row > .image_cell, .track_data_row > .button_cell
+{
+    width: 30px;
+}
+
+.artist_data_row > .name_cell
+{
+    flex: 1;
+}
+
+.album_data_row > .name_cell
+{
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.track_data_row > .name_cell
+{
+    flex: 1;
+    word-wrap: break-word;
+    font-size: .9em;
+}
+
+.data_row > div, .header_row > div
+{
+    height: 30px;
+    border: none;
+    background-color: whitesmoke;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.album_data_row  > div
+{
+    height: 32px;
+}
+
+.album_data_row .button_cell, .track_data_row .button_cell
+{
+    line-height: .7;
+}
+
+.track_data_row  > div
+{
+    height: 38px;
+}
+
+.header_row > div
+{
+    background-color: #dbf7d8;
+}
+
+.data_row div:last-child, .header_row div:last-child
+{
+    margin-right: 2px;
+}
+
+.data_row img, .header_row img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.data_cell
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.data_cell:first-child
+{
+    margin-left: 2px;
+}
+
+.data_row, .header_row
+{
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.little_text
+{
+    font-size: 80%;
+}
+
+.album_data_row .name_cell
+{
+    display: block;
+}
+
+#dialog_window
+{
+    z-index: 999;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+
+    width: 500px;
+    border: none;
+}
+
+#dialog_window_content_container
+{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#dialog_window::backdrop 
+{
+  background: rgba(0,0,0,.5);
+}
+
+#dialog_window_header
+{
+    height: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+}
+
+#close_dialog_window
+{
+    margin-right: 6px;
+    margin-bottom: 3px;
+    color: #d6d6d6;
+    font-size: large;
+    cursor: pointer;
+}
+
+#close_dialog_window:hover
+{
+    color: white;
+}
+
+#dialog_window.warning #close_dialog_window
+{
+    color: #777777;
+}
+
+#dialog_window.warning #close_dialog_window:hover
+{
+    color: black;
+}
+
+#dialog_window.error #dialog_window_header
+{
+    background-color: crimson;
+}
+
+#dialog_window.warning #dialog_window_header
+{
+    background-color: #f9fa79;
+}
+
+#dialog_window.message #dialog_window_header
+{
+    background-color: rgb(57, 122, 62);
+}
+
+/* music player */
+
+#music_player
+{
+    width: 300px;
+}
+
+#timeScope
+{
+    margin-top: 2px;
+    height: 25px;
+    background-color: rgba(255,255,255,.5);
+    justify-content: center;
+    display: flex;
+    font-size: .8em;
+}
+
+#control_buttons
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+}
+
+#player_time
+{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#progress_container {
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(232, 241, 255);
+    margin-bottom: 2px;
+}
+
+#progress_bar {
+    height: 15px;
+    background-color: gold;
+    width: 0;
+}
+
+#sound_container {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#sound_bar {
+    height: 15px;
+    background-color: lightblue;
+    width: 100%;
+}
+
+#sound_controls
+{
+    display: flex;
+    width: 300px;
+    align-content: center;
+}
+
+#control_buttons button
+{
+    border: none;
+    height: 20px;
+    width: 24px;
+    background-color: whitesmoke;
+}
+
+#sound_controls button
+{
+    border: none;
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+}
+
+#play_next_b, #play_prev_b
+{
+    font-size: medium;
+}
+
+#play_prev_b
+{
+    margin-left: 7px;
+}
+
+#goto_index_page
+{
+    font-size: 1.7em;
+    color: white;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

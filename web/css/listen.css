@@ -1,0 +1,486 @@
+body {
+    background-image: url("../images/login-background2.jpg");
+    display: flex;
+    min-height: 99vh;
+    flex-direction: column;
+    margin: 0.1em;
+}
+
+.menu {
+    display: flex;
+
+    margin: .1em;
+    padding: .3em;
+}
+
+
+.upper_menu {
+    background: rgba(25, 49, 112, .7);
+    z-index: 2;
+    height: 40px;
+    transition: all .3s;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bottom_menu 
+{
+
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    transition: all .3s;
+    height: 30px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3);
+    margin: .1em;
+    padding: .3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container 
+{
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    background: rgba(200, 200, 200, 0.55);
+}
+
+
+.invisible 
+{
+    visibility: hidden;
+}
+
+.undisplayable
+{
+    display: none !important;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.noselect 
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.area_header
+{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,.5);
+}
+
+#form_container
+{
+    width: 1065px;
+    height: 730px;
+    /*border: solid .5px whitesmoke;*/
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.4);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#playlists, #track_props
+{
+    height: 100%;
+    width: 300px;
+    /*background-color: rgba(255,255,255,.3);*/
+    background-color: rgba(0,0,0,.4);
+}
+
+#music_player_container
+{
+    height: 100%;
+    width: 320px;
+}
+
+#playlists
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#playlists .area_header
+{
+    background-color: rgba(255,255,255,.8);
+}
+
+#playlists_list
+{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255,255,255,.7);
+}
+
+#tracks
+{
+    width: 100%;
+    flex: 1;
+    /*background-color: rgba(130, 82, 169, .3);*/
+    margin-top: 1px;
+    margin-bottom: 1px;
+    overflow-x: auto;
+    
+    padding-top: 3px;
+}
+
+#track_props
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#track_block
+{
+    margin-top: 25px;
+    width: 100%;
+}
+
+#track_block .area_header
+{
+    background-color: rgba(255,255,255,.9);
+}
+
+#track_name_block
+{
+    margin-left: 1px;
+    margin-right: 1px;
+    width: calc(100% - 2px);
+    height: 50px;
+    background-color: rgba(255,255,255,.5);
+    word-wrap: break-word;
+    
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+#artist_block, #album_block
+{
+    height: 285px;
+    width: 200px;
+    /*background-color: rgba(255,255,255,.5);*/
+    margin-top: 25px;
+}
+
+.image_container
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,.4);
+}
+
+.prop_field
+{
+    width: 100%;
+    height: 50px;
+    background-color: #dedfdf;
+    word-wrap: break-word;
+    
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#artist_block .area_header, #album_block .area_header, #track_block .area_header
+{
+    color: #8d8a8a;
+    background-color: #dadade;
+    width: 100%;
+}
+
+#track_block .area_header
+{
+    width: calc(100% - 2px);
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.image_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container img
+{
+    max-height: calc(100% - 2px);
+    max-width: calc(100% - 2px);
+}
+
+/* music player */
+#music_player_container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#music_player
+{
+    width: 300px;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,.4);
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#timeScope
+{
+    height: 25px;
+    background-color: rgba(255,255,255,.5);
+    justify-content: center;
+    display: flex;
+    font-size: .8em;
+}
+
+#control_buttons
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    height: 35px;
+}
+
+#player_time
+{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#progress_container 
+{
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(232, 241, 255);
+    margin-top: 15px;
+}
+
+#progress_bar 
+{
+    height: 30px;
+    background-color: gold;
+    width: 0;
+}
+
+#sound_container 
+{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sound_bar 
+{
+    height: 100%;
+    background-color: #5eca5096;
+    width: 100%;
+}
+
+#sound_controls
+{
+    display: flex;
+    width: 300px;
+    align-content: center;
+}
+
+#control_buttons button
+{
+    border: none;
+    height: 35px;
+    width: 35px;
+    background-color: whitesmoke;
+    padding: 0;
+}
+
+#buttons_1
+{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+}
+
+#buttons_1
+{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+}
+
+#buttons_2
+{
+    display: flex;
+    width: 82.5px;
+    justify-content: space-between;
+}
+
+#buttons_1 button, #buttons_2 button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+#play_next_b, #play_prev_b
+{
+    font-size: medium;
+}
+
+#decr_volume, #encr_volume
+{
+    margin-right: 3px;
+    margin-left: 3px;
+    
+    border: none;
+    
+    height: 20px;
+    width: 20px;
+}
+
+#options
+{
+    margin-top: 15px;
+}
+
+#options div
+{
+    background-color: rgba(255,255,255,.7);
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+#options input
+{
+    height: 15px;
+    width: 15px;
+}
+
+#options label
+{
+    margin-left: 10px;
+}
+
+#form_container button:hover, .play_track_button:hover
+{
+    background-color: #658cff;
+    color: white;
+}
+
+#form_container button:active
+{
+    background-color: #59e564;
+}
+
+.play_track_button:active
+{
+    background-color: crimson;
+    color: white;
+}
+
+
+#playlists_list
+{
+    text-align-last: center;
+}
+
+
+/* track row styles */
+.track_row 
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    height: 25px;
+    margin-bottom: 3px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.play_track_button
+{
+    padding: 0;
+    font-size: smaller;
+    height: 100%;
+    width: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.track_name
+{
+    height: 100%;
+    background-color: #add8a5;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.track_row.being_played_now
+{
+    background-color: #ffed4b;
+}
+
+.track_row.being_played_now .play_track_button
+{
+    color: white;
+    background-color: orangered;
+}
+
+#goto_index_page
+{
+    font-size: 1.7em;
+    color: white;
+    margin-right: 10px;
+}
+

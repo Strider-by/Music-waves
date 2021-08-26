@@ -1,0 +1,26 @@
+#artist_search_type_area
+{
+    margin-top: 10px;
+}
+
+#artist_activity_type_area
+{
+    margin-top: 10px;
+}
+
+#artists_search_warning
+{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#new_artist_block_create_warning
+{
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+#track_editable_props_block
+{
+    max-width: 100%;
+}
